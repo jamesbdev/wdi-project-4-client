@@ -7,8 +7,10 @@ function RegisterCtrl(User, CurrentUserService, $state){
  const vm = this;
 
  vm.register = () => {
+
    User
-     .register(vm.user).$promise
+     .register(vm.user)
+     .$promise
      .then(() => {
        CurrentUserService.getUser();
        $state.go('usersIndex');

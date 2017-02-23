@@ -1,6 +1,6 @@
 angular
 .module('wdi-project-4', [
-  'ui-router',
+  'ui.router',
   'ngResource',
   'angular-jwt'
 ]);

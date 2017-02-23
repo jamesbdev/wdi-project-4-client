@@ -1,8 +1,8 @@
 angular
 .module('wdi-project-4')
-.config(Interceptor);
+.config(setUpInterceptor);
 
-Interceptor.$inject = ['$httpProvider'];
-function Interceptor($httpProvider){
+setUpInterceptor.$inject = ['$httpProvider'];
+function setUpInterceptor($httpProvider){
   return $httpProvider.interceptors.push('AuthInterceptor');
 }

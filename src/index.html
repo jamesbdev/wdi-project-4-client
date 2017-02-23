@@ -1,13 +1,25 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Angular Stack Setup</title>
-    <!-- inject:js -->
-    <!-- endinject -->
-    <!-- inject:css -->
-    <!-- endinject -->
-  </head>
-  <body>
+<html ng-app="wdi-project-4">
+<head>
+  <meta charset="utf-8">
+  <title>Travel-base</title>
+  <base href="/" />
+  <!-- inject:js -->
+  <!-- endinject -->
+  <!-- inject:css -->
+  <!-- endinject -->
+</head>
+<body ng-controller="MainCtrl as main">
+  <!-- <h1> a class="main"ui-sref="home"Welcome to Travelbase</h1> -->
+    <button ng-hide="main.user" ui-sref="register">Register</button>
+    <button ng-hide="main.user" ui-sref="login">Login</button>
+    <button ng-if="main.user" ng-click="main.logout()">Logout</button>
+      <!-- <img src="images/car.png" alt="some_text" style="width:200px;height:100px height: 100px">
+    </div> -->
+    <main ui-view></main>
+
+
+
+
   </body>
-</html>
+  </html>

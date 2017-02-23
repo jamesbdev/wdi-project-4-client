@@ -1,3 +1,3 @@
 angular
 .module('wdi-project-4')
-.constant('API', '${window.location.origin}/api');
+.constant('API', 'http://localhost:3000');

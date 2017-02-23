@@ -1,1 +1,83 @@
 // Import all of your scss files here
+
+button {
+
+  background-color: #44DB0D;
+  color:white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  border:none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 3px 2px;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  // float: right;
+}
+
+h1 {
+  font-family: 'Sansita', sans-serif;
+  // background-color:
+  text-align: center;
+  color: #44DB0D
+}
+
+.login {
+  text-align: center;
+}
+
+.button {
+  background-color: #44DB0D;
+  border:none;
+
+}
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius:4px;
+  box-sizing:border-box;
+}
+
+label{
+  font-family: 'Sansita', sans-serif;
+
+}
+
+.media-object {
+  width: 299px;
+  height: 291px;
+  border-radius: 170px;
+  margin-left: 346px;
+}
+
+li.ng-scope {
+  list-style: none;
+}
+
+ul {
+  list-style: none;
+  text-align: center;
+  border: 2px solid #44DB0D;
+  padding-left: 0px;
+}
+
+.media-body {
+      text-align: center;
+}
+
+.jumbotron {
+  background-color: #cccf;
+  background-image: url("http://images.newindianexpress.com/uploads/user/imagelibrary/2016/11/27/original/Travel.jpg");
+  margin-top: 46px;
+}
+
+.btn-primary btn-lg {
+  margin-left: 427px;
+
+}
