@@ -17,11 +17,37 @@ button {
   // float: right;
 }
 
+main {
+  clear: both;
+}
+
+div.buttons {
+  float: right;
+  padding: 15px;
+}
+
 h1 {
   font-family: 'Sansita', sans-serif;
-  // background-color:
   text-align: center;
-  color: #44DB0D
+  color: #44DB0D;
+}
+
+div.logo {
+  padding: 15px;
+  float: left;
+  h1 {
+    margin: 0;
+    color: #44DB0D;
+    display: inline-block;
+    a.main {
+      color: #44DB0D;
+      text-decoration: none;
+    }
+  }
+}
+
+h4 {
+  text-align: center;
 }
 
 .login {
@@ -50,10 +76,18 @@ label{
 }
 
 .media-object {
-  width: 299px;
-  height: 291px;
-  border-radius: 170px;
-  margin-left: 346px;
+  width: 250px;
+  height: 250px;
+  border-radius: 100%;
+  padding: 25px;
+}
+
+.media-left, .media-right, .media-body {
+  vertical-align: middle;
+  h4, p {
+    text-align: left;
+  }
+
 }
 
 li.ng-scope {
@@ -68,16 +102,50 @@ ul {
 }
 
 .media-body {
-      text-align: center;
+  text-align: center;
 }
 
 .jumbotron {
-  background-color: #cccf;
-  background-image: url("http://images.newindianexpress.com/uploads/user/imagelibrary/2016/11/27/original/Travel.jpg");
-  margin-top: 46px;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-image: url("https://source.unsplash.com/category/nature/1600x900");
+  margin: 0;
+}
+
+p.lead {
+  text-align: center;
 }
 
 .btn-primary btn-lg {
   margin-left: 427px;
+
+}
+
+div.instructions {
+  width: 70%;
+  margin: 0 auto;
+  div.step {
+    margin: 0;
+    width: 49%;
+    display: inline-block;
+    p {
+      text-align: center;
+      display: inline-block;
+    }
+  }
+}
+
+div.users {
+  text-align: center;
+  div {
+    display: inline-block;
+    padding: 20px;
+    img {
+      width: 200px;
+      height: 200px;
+      border-radius: 100%;
+    }
+  }
 
 }

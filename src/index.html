@@ -4,21 +4,30 @@
   <meta charset="utf-8">
   <title>Travel-base</title>
   <base href="/" />
+  <link href="https://fonts.googleapis.com/css?family=Sansita" rel="stylesheet">
   <!-- inject:js -->
   <!-- endinject -->
   <!-- inject:css -->
   <!-- endinject -->
 </head>
 <body ng-controller="MainCtrl as main">
-  <!-- <h1> a class="main"ui-sref="home"Welcome to Travelbase</h1> -->
-    <button ng-hide="main.user" ui-sref="register">Register</button>
-    <button ng-hide="main.user" ui-sref="login">Login</button>
-    <button ng-if="main.user" ng-click="main.logout()">Logout</button>
+<div class="logo">
+  <h1 id="logo"><a class="main" ui-sref="home">Travelbase</a></h1>
+</div>
+
+<div class="buttons">
+  <button ng-hide="main.user" ui-sref="register">Register</button>
+  <button ng-hide="main.user" ui-sref="login">Login</button>
+  <button ng-if="main.user" ui-sref="usersShow({id: main.user.id})">My favorites</button>
+  <button ng-if="main.user" ui-sref="usersIndex">Users</button>
+  <button ng-if="main.user" ng-click="main.logout()">Logout</button>
+</div>
+
       <!-- <img src="images/car.png" alt="some_text" style="width:200px;height:100px height: 100px">
     </div> -->
     <main ui-view></main>
 
-
+<footer><h4>Made by James Bremner</h4></footer>
 
 
   </body>

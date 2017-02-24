@@ -12,7 +12,7 @@ function favouritesNewCtrl(Favourite, $state, CurrentUserService){
     .$promise
     .then((data) => {
       console.log(data);
-      // $state.go('favouritesShow()');
+      $state.go('usersShow', {id: CurrentUserService.currentUser.id});
     });
   };
 }

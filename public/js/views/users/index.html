@@ -1,5 +1,5 @@
-<h1>Profile's</h1>
-<div class="media" ng-repeat="user in usersIndex.users">
+<h1>Profiles</h1>
+<!-- <div class="media" ng-repeat="user in usersIndex.users">
  <div class="media-left">
    <a ui-sref="usersShow({ id: user.id })">
      <img class="media-object" ng-src="{{ user.image }}">
@@ -9,4 +9,14 @@
    <h4 class="media-heading">{{ user.username }}</h4>
    <p>{{ user.email }}</p>
  </div>
+</div> -->
+
+<div class="users">
+  <div class="" ng-repeat="user in usersIndex.users">
+     <a ui-sref="usersShow({ id: user.id })">
+       <img class="" ng-src="{{ user.image }}">
+     </a>
+     <h4 class="">{{ user.username }}</h4>
+     <p>{{ user.email }}</p>
+  </div>
 </div>
